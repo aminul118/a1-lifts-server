@@ -1,0 +1,43 @@
+import { Router } from 'express';
+import { UserRoutes } from '../../modules/user/user.routes';
+import { AuthRouter } from '../../modules/auth/auth.route';
+import { OTPRouter } from '../../modules/otp/otp.route';
+import { ContactRouter } from '../../modules/contact/contact.route';
+import { IModuleRoutes } from '../../types';
+import { BlogRouter } from '../../modules/blog/blog.route';
+import { SubscribeRouter } from '../../modules/subscribe/subscribe.route';
+
+const router = Router();
+
+const moduleRoutes: IModuleRoutes[] = [
+  {
+    path: '/user',
+    element: UserRoutes,
+  },
+  {
+    path: '/auth',
+    element: AuthRouter,
+  },
+  {
+    path: '/otp',
+    element: OTPRouter,
+  },
+  {
+    path: '/contact',
+    element: ContactRouter,
+  },
+  {
+    path: '/blog',
+    element: BlogRouter,
+  },
+  {
+    path: '/subscribe',
+    element: SubscribeRouter,
+  },
+];
+
+moduleRoutes.forEach((r) => {
+  router.use(r.path, r.element);
+});
+
+export const routerV1 = router;
