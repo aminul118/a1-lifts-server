@@ -27,7 +27,6 @@ const loadEnvVariables = (): EnvConfig => ({
   FRONTEND_URL: getEnv('FRONTEND_URL'),
   ADMIN_NAME: getEnv('ADMIN_NAME'),
   ADMIN_EMAIL: getEnv('ADMIN_EMAIL'),
-  OPENAI_API_KEY: getEnv('OPENAI_API_KEY'),
   SSL: {
     SSL_STORE_ID: getEnv('SSL_STORE_ID'),
     SSL_STORE_PASS: getEnv('SSL_STORE_PASS'),

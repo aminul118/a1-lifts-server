@@ -2,8 +2,8 @@ import { CorsOptions } from 'cors';
 
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://shrlbd.com',
-  'https://www.shrlbd.com',
+  'https://a1-lifts.com',
+  'https://www.a1-lifts.com',
 ];
 
 /**

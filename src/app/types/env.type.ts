@@ -16,7 +16,6 @@ export interface EnvConfig {
   FRONTEND_URL: string;
   ADMIN_NAME: string;
   ADMIN_EMAIL: string;
-  OPENAI_API_KEY: string;
   SSL: {
     SSL_STORE_ID: string;
     SSL_STORE_PASS: string;

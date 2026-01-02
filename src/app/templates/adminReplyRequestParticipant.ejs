@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Email Response from SHRL Admin</title>
+    <title>Email Response from A1 Lifts & Engineering Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       body {
@@ -25,8 +25,11 @@
         color: rgb(215, 204, 204);
         padding: 20px;
       }
-      .header img {
-        max-width: 80px;
+      .header {
+        width: 180px;
+        height: 50px;
+        margin: 0 auto 20px auto;
+        display: block;
       }
       .content {
         padding: 20px 30px;
@@ -50,16 +53,16 @@
   <body>
     <div class="email-container">
       <div class="header">
-        <img src="https://www.shrlbd.com/logo.png" alt="Company Logo" />
-        <p>Smart Healthcare & Research Limited</p>
+        <img src="https://i.ibb.co.com/5X01Ry2w/logo.jpg" alt="Company Logo" />
+        <p>A1 Lifts & Engineering</p>
       </div>
 
       <div class="content"><%- message %></div>
       <!-- ✅ KEEP HTML from Quill -->
 
       <div class="footer">
-        &copy; <%= new Date().getFullYear() %> Smart Healthcare & Research Ltd.. All rights
-        reserved.
+        &copy; <%= new Date().getFullYear() %> A1 Lifts & Engineering. All
+        rights reserved.
       </div>
     </div>
   </body>
