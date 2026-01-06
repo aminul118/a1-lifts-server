@@ -6,6 +6,7 @@ import { ContactRouter } from '../../modules/contact/contact.route';
 import { IModuleRoutes } from '../../types';
 import { BlogRouter } from '../../modules/blog/blog.route';
 import { SubscribeRouter } from '../../modules/subscribe/subscribe.route';
+import { BannerRouter } from '../../modules/banner/banner.route';
 
 const router = Router();
 
@@ -33,6 +34,10 @@ const moduleRoutes: IModuleRoutes[] = [
   {
     path: '/subscribe',
     element: SubscribeRouter,
+  },
+  {
+    path: '/banner',
+    element: BannerRouter,
   },
 ];
 
