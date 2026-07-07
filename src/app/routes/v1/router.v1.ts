@@ -7,6 +7,7 @@ import { IModuleRoutes } from '../../types';
 import { BlogRouter } from '../../modules/blog/blog.route';
 import { SubscribeRouter } from '../../modules/subscribe/subscribe.route';
 import { BannerRouter } from '../../modules/banner/banner.route';
+import { ProductRouter } from '../../modules/product/product.route';
 
 const router = Router();
 
@@ -38,6 +39,10 @@ const moduleRoutes: IModuleRoutes[] = [
   {
     path: '/banner',
     element: BannerRouter,
+  },
+  {
+    path: '/product',
+    element: ProductRouter,
   },
 ];
 
